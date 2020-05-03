@@ -69,7 +69,7 @@ void SetColorAndBackground(int ForgC, int BackC)
 
 COORD coord = {0,0};
 void gotoxy(int x, int y){
-    coord.X = x; coord.Y = y; /// X and Y coordinates
+    coord.X = x; coord.Y = y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
 }
 
@@ -167,11 +167,6 @@ void print_heading(const char st[]){
     SetColorAndBackground(17,15);
 }
 
-int conf_record(char id[]){
-   // left for you
-   //it checks whether the entered id for
-   //new record is already in the database.
-}
 
 void add_student(){
     clearWindow();
